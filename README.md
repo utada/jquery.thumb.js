@@ -47,12 +47,6 @@ var entities = {
           ]
         }
       ],
-      "urls": [
-      ],
-      "user_mentions": [
-      ],
-      "hashtags": [
-      ],
     "urls": [
         {
           "url": "http://t.co/0JG5Mcq",
@@ -68,11 +62,11 @@ var entities = {
     
 $(entities.media).each(function() {
   $(this).thumbs();
-  $(".text").append("<p>"+this.thumbnail_url);
+  $(".text").append("&lt;p&gt;"+this.thumbnail_url);
 });
 
 $(entities.urls).each(function() {
   $(this).thumbs();
-  $(".text").append("<p>"+this.thumbnail_url);
+  $(".text").append("&lt;p&gt;"+this.thumbnail_url);
 });
 </pre>
