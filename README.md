@@ -3,11 +3,6 @@ jquery.thumb.js
 
 jquery picture thumbnails plugin
 
-jquery.thumb.js
-===============
-
-jquery picture thumbnails plugin
-
 # Sample
 
 http://jsfiddle.net/5Dsc8/1/
