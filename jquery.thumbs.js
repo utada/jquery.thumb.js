@@ -22,8 +22,10 @@
         path = this.media_url.split('/');
 
         // pic.twitter.com
-        if (path[2] === "p.twimg.com") {
-          this.thumbnail_url = "http://p.twimg.com/"+path[3]+":thumb";
+        var u = path[2].split('.').reverse();
+        var root_domain = u[1] + '.' + u[0];
+        if (root_domain === "twimg.com") {
+          this.thumbnail_url = "http://" + path[2] + "/" + path[4] + ":thumb";
         }
       }
     });
