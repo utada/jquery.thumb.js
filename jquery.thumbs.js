@@ -25,7 +25,8 @@
         var u = path[2].split('.').reverse();
         var root_domain = u[1] + '.' + u[0];
         if (root_domain === "twimg.com") {
-          this.thumbnail_url = "http://" + path[2] + "/" + path[4] + ":thumb";
+          this.thumbnail_url = "http://" + path[2] + "/" + path[3] + 
+            "/" + path[4] + ":thumb";
         }
       }
     });
